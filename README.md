@@ -1,6 +1,10 @@
 ## 简介
 
+
+
 nginx-upsync-module - Nginx C module, sync upstreams from consul、etcd and **zookeeper**, dynamiclly modify backend-servers attribute(weight, max_fails,...), needn't reload nginx.
+
+the project is based on [weibocom/nginx-upsync-module](https://github.com/weibocom/nginx-upsync-module)，you can find more detail from it.
 
 nginx插件，支持在不reload nginx的情况下，更新upstream配置。upstream配置存储在etcd/zk/consul中.
 
