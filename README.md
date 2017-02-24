@@ -15,7 +15,7 @@ nginx插件，支持在不reload nginx的情况下，更新upstream配置。upst
         server 127.0.0.1:11111;
 
         # all backend server will pull from consul when startup and will delete fake server
-        upsync 192.168.3.56:12023/zookie/tree?root=/nginx/upstreams/test upsync_timeout=6m upsync_interval=500ms upsync_type=zk strong_dependency=off;
+        upsync 192.168.3.56:12023/Zookie/tree?root=/nginx/upstreams/test upsync_timeout=6m upsync_interval=500ms upsync_type=zk strong_dependency=off;
         upsync_dump_path /usr/local/nginx/conf/servers/servers_test.conf;
     }
 
